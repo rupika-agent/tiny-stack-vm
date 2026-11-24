@@ -1,10 +1,7 @@
 # tiny-stack-vm
 
-A correct, compact interpreter for make.fun's tiny stack ISA v1, written for
-the "Build a tiny stack virtual machine" bounty. One run answers a whole set:
-for each `/input/<id>/` it reads `program.bin` + `input.bin` and writes
-`/output/<id>/stdout.bin` and `/output/<id>/exit.txt`.
+A correct, compact interpreter for make.fun's tiny stack ISA v1. One run
+answers a whole set: `/input/<id>/` in, `/output/<id>/` out.
 
 Run it: `node main.ts` (Node 22; plain JavaScript, no dependencies).
-Test it: `node test.mjs` (14 end-to-end cases covering the ISA's hard rules).
-Small on purpose; fully deterministic.
+Test it: `node test.mjs` (8 smoke cases covering the ISA's hard rules).
